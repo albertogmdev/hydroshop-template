@@ -5,19 +5,6 @@ Hydrogen is Shopify’s stack for headless commerce. Hydrogen is designed to dov
 [Check out Hydrogen docs](https://shopify.dev/custom-storefronts/hydrogen)
 [Get familiar with Remix](https://remix.run/docs/en/v1)
 
-## What's included
-
-- Remix
-- Hydrogen
-- Oxygen
-- Vite
-- Shopify CLI
-- ESLint
-- Prettier
-- GraphQL generator
-- TypeScript and JavaScript flavors
-- Minimal setup of components and routes
-
 ## Getting started
 
 **Requirements:**
@@ -38,6 +25,23 @@ npm run build
 
 ```bash
 npm run dev
+```
+
+## Setup local enviroment variables 
+Login your shopify account and select your store
+```bash
+npx shopify hydrogen link
+```
+
+Pull the variables data from shopify to your .env file
+```bash
+npx shopify hydrogen env pull 
+```
+
+## Deploy to Oxygen
+Deploy the app to Oxygen in order to get a preview URL
+```bash
+npx shopify hydrogen deploy
 ```
 
 ## Setup for using Customer Account API (`/account` section)
